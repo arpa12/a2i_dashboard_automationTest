@@ -1,5 +1,5 @@
 import { loginPage } from "../../pages/login";
-import { initiativeAddEditPage, indicatorAddForInitiativeItem, createTargetForInitiativeIndicator } from "../../pages/settings/initiativeAddEditPage";
+import { initiativeAddEditPage, indicatorAddForInitiativeItem, createTargetForInitiativeIndicator } from "../../pages/settings/initiative";
 
 describe("template spec", () => {
   it("check initiative add and edit functionality", () => {
