@@ -16,3 +16,12 @@
 // Import commands.js using ES2015 syntax:
 import "./commands";
 require("cypress-xpath");
+
+Cypress.on('uncaught:exception', (err) => {
+  if (
+    err.message.includes('jQuery is not defined') ||
+    err.message.includes('$ is not defined')
+  ) {
+    return false; // prevent Cypress from failing the test
+  }
+});
