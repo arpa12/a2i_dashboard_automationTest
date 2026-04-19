@@ -16,12 +16,13 @@
 // Import commands.js using ES2015 syntax:
 import "./commands";
 import "cypress-file-upload";
+import "cypress-mochawesome-reporter/register";
 require("cypress-xpath");
 
-Cypress.on('uncaught:exception', (err) => {
+Cypress.on("uncaught:exception", (err) => {
   if (
-    err.message.includes('jQuery is not defined') ||
-    err.message.includes('$ is not defined')
+    err.message.includes("jQuery is not defined") ||
+    err.message.includes("$ is not defined")
   ) {
     return false; // prevent Cypress from failing the test
   }
