@@ -1,0 +1,27 @@
+export const mapPage = () => {
+  cy.get('[id="comparison-dropdown-toggle"]').click();
+  cy.wait(2000);
+  cy.xpath("/html/body/header/div/nav/ul/li[3]/ul/li[2]/a").click();
+  cy.wait(2000);
+  cy.get('[id="select2-project_id_1-container"]').click();
+  cy.wait(2000);
+  cy.xpath("/html/body/span/span/span[2]/ul/li[1]").click();
+  cy.wait(2000);
+  cy.get('[id="select2-indicator_id_1-container"]').click();
+  cy.wait(2000);
+  cy.xpath("/html/body/span/span/span[2]/ul/li[1]").click();
+  cy.wait(2000);
+  cy.get('[id="select2-project_id_2-container"]').click();
+  cy.wait(2000);
+  cy.xpath("/html/body/span/span/span[2]/ul/li[1]").click();
+  cy.wait(2000);
+  cy.get('[id="select2-indicator_id_2-container"]').click();
+  cy.wait(2000);
+  cy.xpath("/html/body/span/span/span[2]/ul/li[1]").click();
+  cy.wait(2000);
+  cy.xpath("/html/body/main/div[1]/div/div[5]/div/input").click();
+  cy.wait(2000);
+  cy.xpath("/html/body/div/div[3]/div/button[1]").click();
+  cy.wait(2000);
+  cy.xpath("/html/body/main/div[1]/div/div[7]/button").click();
+};
