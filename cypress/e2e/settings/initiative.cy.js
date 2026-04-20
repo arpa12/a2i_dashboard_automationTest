@@ -1,7 +1,7 @@
 import { loginPage } from "../../pages/login";
 import { initiativeAddEditPage, indicatorAddForInitiativeItem, createTargetForInitiativeIndicator } from "../../pages/settings/initiative";
 
-describe("template spec", () => {
+describe("Cypress Automation Testing for Initiative", () => {
   it("check initiative add and edit functionality", () => {
     cy.visit("https://uat-dashboard.a2i.gov.bd/");
     loginPage();

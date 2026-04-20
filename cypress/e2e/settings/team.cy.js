@@ -1,7 +1,7 @@
 import { loginPage } from "../../pages/login";
 import { teamAddEditPage, checkNewItemInTeamDropdown, addInitiativeForNewTeam, checkDetailsForNewTeam} from "../../pages/settings/team";
 
-describe("template spec", () => {
+describe("Cypress Automation Testing for Team", () => {
   it("check team add and edit functionality", () => {
     cy.visit("https://uat-dashboard.a2i.gov.bd/");
     loginPage();
